@@ -1,0 +1,120 @@
+/* スタイルの定義開始 */
+/* loadingクラスが指定された<span>要素に適用されるスタイル */
+span.loading {
+    display: inline-block; /* インラインブロック要素として表示 */
+    white-space: nowrap; /* ホワイトスペースを折り返さない */
+}
+
+/* loadingクラスが指定された<span>要素の中の<span>要素に適用されるスタイル */
+span.loading span {
+    display: inline-block; /* インラインブロック要素として表示 */
+    vertical-align: middle; /* 垂直方向に中央に配置 */
+}
+
+
+/* loadingクラスが指定された<span>要素内の2番目以降の<span>要素に適用されるスタイル */
+span.loading span:nth-of-type(1) {
+    -webkit-animation: animation 2s ease 0s infinite; /* -webkit-プレフィックスを使用したアニメーションの指定 */
+    animation: animation 2s ease 0s infinite; /* アニメーションの指定 */
+}
+
+/* loadingクラスが指定された<span>要素内の3番目以降の<span>要素に適用されるスタイル */
+span.loading span:nth-of-type(2) {
+    -webkit-animation: animation 2s ease 0.1s infinite; /* -webkit-プレフィックスを使用したアニメーションの指定 */
+    animation: animation 2s ease 0.1s infinite; /* アニメーションの指定 */
+}
+
+/* loadingクラスが指定された<span>要素内の4番目以降の<span>要素に適用されるスタイル */
+/* 同様のパターンで5番目以降、6番目以降、7番目以降にも適用される */
+span.loading span:nth-of-type(3) {
+    -webkit-animation: animation 2s ease 0.2s infinite; /* -webkit-プレフィックスを使用したアニメーションの指定 */
+    animation: animation 2s ease 0.2s infinite; /* アニメーションの指定 */
+}
+
+span.loading span:nth-of-type(4) {
+    -webkit-animation: animation 2s ease 0.3s infinite;
+    animation: animation 2s ease 0.3s infinite;
+}
+
+span.loading span:nth-of-type(5) {
+    -webkit-animation: animation 2s ease 0.4s infinite;
+    animation: animation 2s ease 0.4s infinite;
+}
+
+span.loading span:nth-of-type(6) {
+    -webkit-animation: animation 2s ease 0.5s infinite;
+    animation: animation 2s ease 0.5s infinite;
+}
+
+span.loading span:nth-of-type(7) {
+    -webkit-animation: animation 2s ease 0.6s infinite;
+    animation: animation 2s ease 0.6s infinite;
+}
+
+
+
+/* @-webkit-keyframesルールで定義された名前がanimationのアニメーション */
+
+/* @-webkit-keyframes animation {
+    0% {
+        margin-top: 0;
+    }
+
+    5% {
+        margin-top: -1em;
+    }
+    
+    10% {
+        margin-top: 0;
+    }
+
+    13% {
+        margin-top: -0.5em;
+    }
+
+    16% {
+        margin-top: 0;
+    }
+
+    18% {
+        margin-top: -0.2em;
+    }
+
+    20% {
+        margin-top: 0;
+    }
+} */
+
+
+/* @keyframesルールで定義された名前がanimationのアニメーション */
+@keyframes animation {
+    0% {
+        margin-top: 0; /* 上方向のマージンを0に設定 */
+    }
+
+    5% {
+        margin-top: -2em; /* 上方向のマージンを-1emに設定 */
+    }
+
+    /* 同様のパターンで10%、13%、16%、18%、20%にもマージンの値を設定 */
+
+    10% {
+        margin-top: 0;
+    }
+
+    13% {
+        margin-top: -0.9em;
+    }
+
+    16% {
+        margin-top: 0;
+    }
+
+    18% {
+        margin-top: -0.4em;
+    }
+
+    20% {
+        margin-top: 0;
+    }
+}
