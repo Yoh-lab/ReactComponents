@@ -12,6 +12,7 @@ const LogIn = () => {
     const [user, setUser] = useState(null); // userとsetUserをuseStateフックで定義
 
     const handleSubmit = async (event) => {
+        setUser('test_userid'); // onAuthStateChanged関数を使用して認証の状態が変化したときにイベントを購読し、ユーザーステートを更新
         // ログインフォームの送信処理
         // event.preventDefault();
         // try {
@@ -27,6 +28,7 @@ const LogIn = () => {
     };
 
     useEffect(() => {
+        // setUser('test_userid'); // onAuthStateChanged関数を使用して認証の状態が変化したときにイベントを購読し、ユーザーステートを更新
         // const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
         //     // コンポーネントのマウント時に実行される処理
         //     setUser(currentUser); // onAuthStateChanged関数を使用して認証の状態が変化したときにイベントを購読し、ユーザーステートを更新

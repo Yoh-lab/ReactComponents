@@ -10,14 +10,14 @@ const SignInPage = () => {
     }, []);
     return (
         <>
-            {/* <section className="min-h-screen ">
+            <section className="min-h-screen ">
                 <div className="App-header flex items-center">
-                    <MainLogoDark className="w-72 xl:w-full h-24 xl:h-40 mx-auto mb-8" />
+                    {/* <MainLogoDark className="w-72 xl:w-full h-24 xl:h-40 mx-auto mb-8" /> */}
                     <Typography component="h1" variant="h6">
                         全ては、1つのタネから。
                     </Typography>
                 </div>
-            </section> */}
+            </section>
             <section className="min-h-screen flex items-center justify-center py-20 text-dark dark:text-light">
                 <div>
                     <LogIn />

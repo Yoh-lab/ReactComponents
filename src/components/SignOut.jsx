@@ -23,7 +23,7 @@ const SignOut = () => {
             sx={{ mt: 3, mb: 3 }}
             onClick={handleClickSignOut} // ログアウトボタンがクリックされたときにhandleClickSignOut関数を実行
         >
-            Sign Out
+            Return
         </Button>
     );
 };
